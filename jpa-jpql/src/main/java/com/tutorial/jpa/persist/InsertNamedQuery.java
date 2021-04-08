@@ -4,22 +4,22 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import com.tutorial.jpa.domain.StudentNamedQuery;
+import com.tutorial.jpa.domain.StudentBulkData;
 
 public class InsertNamedQuery {
 
 	public static void main(String[] args) {
 		
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("basics_operations");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("bulk_data");
 		EntityManager em = emf.createEntityManager();
 	
 		em.getTransaction().begin();
 		
-		StudentNamedQuery student1 = new StudentNamedQuery(101, "Uilson", 9);
-		StudentNamedQuery student2 = new StudentNamedQuery(102, "Alessandro", 12);
-		StudentNamedQuery student3 = new StudentNamedQuery(103, "Maria", 30);
-		StudentNamedQuery student4 = new StudentNamedQuery(104, "Regina", 32);
-		StudentNamedQuery student5 = new StudentNamedQuery(105, "Fabio", 43);
+		StudentBulkData student1 = new StudentBulkData(101, "Uilson", 9);
+		StudentBulkData student2 = new StudentBulkData(102, "Alessandro", 12);
+		StudentBulkData student3 = new StudentBulkData(103, "Maria", 30);
+		StudentBulkData student4 = new StudentBulkData(104, "Regina", 32);
+		StudentBulkData student5 = new StudentBulkData(105, "Fabio", 43);
 
 		em.persist(student1);
 		em.persist(student2);
