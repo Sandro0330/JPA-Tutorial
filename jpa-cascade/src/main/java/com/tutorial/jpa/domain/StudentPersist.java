@@ -15,8 +15,14 @@ public class StudentPersist {
 	private String name;
 	private int age;
 	
+	/*	
+		The cascade remove is used to specify that if the parent entity is removed 
+		then all its related entities will also be removed.
+		The following syntax is used to perform cascade remove operation: -
+	 */
+	
 	//@OneToOne(cascade = CascadeType.PERSIST)
-	@OneToOne(cascade = CascadeType.PERSIST)
+	@OneToOne(cascade = CascadeType.REMOVE)
 	private Subject1 sub;
 
 	public StudentPersist() {
