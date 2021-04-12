@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import com.tutorial.jpa.domain.StudentSelect;
+import com.tutorial.jpa.domain.Student;
 
 public class Insert {
 
@@ -17,16 +17,16 @@ public class Insert {
 		
 		//Preenchendo a tabela student_select
 		
-		StudentSelect student1 = new StudentSelect(101, "Uilson", 11);
-		StudentSelect student2 = new StudentSelect(102, "Alessandro", 12);				
-		StudentSelect student3 = new StudentSelect(103, "Thiago", 31);
-		StudentSelect student4 = new StudentSelect(104, "Regina", 32);
-		StudentSelect student5 = new StudentSelect(105, "Maria", 40);
-		StudentSelect student6 = new StudentSelect(106, "Sandro", 42);
-		StudentSelect student7 = new StudentSelect(107, "Regiane", 25);
-		StudentSelect student8 = new StudentSelect(108, "Fabio", 35);
-		StudentSelect student9 = new StudentSelect(109, "Marcelo", 25);
-		StudentSelect student10 = new StudentSelect(110, "José", 23);
+		Student student1 = new Student(101, "Uilson", 11);
+		Student student2 = new Student(102, "Alessandro", 12);				
+		Student student3 = new Student(103, "Thiago", 31);
+		Student student4 = new Student(104, "Regina", 32);
+		Student student5 = new Student(105, "Maria", 40);
+		Student student6 = new Student(106, "Sandro", 42);
+		Student student7 = new Student(107, "Regiane", 25);
+		Student student8 = new Student(108, "Fabio", 35);
+		Student student9 = new Student(109, "Marcelo", 25);
+		Student student10 = new Student(110, "José", 23);
 		
 		em.persist(student1);
 		em.persist(student2);
