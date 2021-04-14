@@ -1,8 +1,10 @@
 package com.tutorial.jpa.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "RetiredEmployee_table_class")
 public class RetiredEmployee extends Employee {
 	private static final long serialVersionUID = 1L;
 	

@@ -9,8 +9,8 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "employee_details")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Table(name = "table_per_class")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Employee implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
